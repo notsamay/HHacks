@@ -72,32 +72,20 @@ html {
     padding-top: 18.75vh; /* 1080px to 1600px = 18.75vh */
   }
   
+/* Apply CSS styles to make the text blink */
+.blue-text {
+  color: #5beec0;
+  text-decoration-color: #5beec0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative; /* Add position relative to create a reference for absolute positioning */
+  animation: blink-animation 0.5s step-start infinite; /* Define the blink animation */
+}
 
-  .blue-text {
-    color: #5beec0;
-    text-decoration-color: #5beec0;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative; /* Add position relative to create a reference for absolute positioning */
-  }
 
-  .blue-text::after {
-    content: ''; /* Use a pseudo-element for the blinker */
 
-    margin-right: -10px; /* Adjust the margin to move the blinker farther away */
-    border-right: 0.4vw solid #5beec0; /* Make the blinker thinner */
-    padding-left: 1vw; /* Add padding to move the other text away from the blinker */
-    animation: blink-caret 0.5s step-end infinite;
-  }
 
-  @keyframes blink-caret {
-    from, to {
-      opacity: 0; /* Make the blinker invisible at the start and end */
-    }
-    50% {
-      opacity: 1; /* Make the blinker visible in the middle of the animation */
-    }
-  }
+
 
 
   
@@ -190,17 +178,16 @@ html {
   
 /* Style for the .gallery h2 element */
 .gallery h2 {
-  font-size: 4vw;
+  font-size: 3vw;
   color: #1f2d3c;
   font-family: 'Arial', sans-serif;
   text-align: center; /* Center-align the text horizontally within its container */
-  background-color: #5beebfcf; /* Background color for highlighting */
   padding: 0.1vw; /* Add padding for a better highlight effect */
   border-radius: 1vw; /* Rounded background edges */
-  width: 23.5vw; /* Specify a different width if needed */
+ 
 }
 .goals h1 {
-  font-size: 3vw;
+  font-size: 2vw;
   color: #1f2d3c;
   font-family: 'Arial', sans-serif;
   font-weight: bolder;
@@ -210,7 +197,7 @@ html {
 }
 
 .goals h3 {
-  font-size: 2.5vw;
+  font-size: 1.8vw;
   color: #1f2d3c;
   font-family: 'Arial', sans-serif;
   font-weight: normal;
@@ -221,13 +208,14 @@ html {
 
 /* Style for the .goals element inside .gallery */
 .gallery .goals {
+  margin-top: 1vw;
   width: 75vw;
 
   background-color: #88888823; /* Gray background color */
-  padding-right: 4vw;
-  padding-left: 4vw;
-  padding-top: 2.5vw;
-  padding-bottom: 2.5vw;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   border-radius: 1.5vw; /* Rounded corners */
   display: flex;
   flex-direction: column; /* Arrange h1 and h3 vertically */
