@@ -78,10 +78,25 @@ html {
   text-decoration-color: #5beec0;
   overflow: hidden;
   white-space: nowrap;
-  position: relative; /* Add position relative to create a reference for absolute positioning */
-  animation: blink-animation 0.5s step-start infinite; /* Define the blink animation */
+  position: relative;
+  /* Use the blink animation */
+
+  padding-right: 1vw;
+  border-right: 5px solid #5beec0;
+  animation: blink 1s step-start infinite;
 }
 
+@keyframes blink {
+  0% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #5beec0;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
 
 
 
@@ -178,7 +193,7 @@ html {
   
 /* Style for the .gallery h2 element */
 .gallery h2 {
-  font-size: 3vw;
+  font-size: 2vw;
   color: #1f2d3c;
   font-family: 'Arial', sans-serif;
   text-align: center; /* Center-align the text horizontally within its container */
@@ -187,10 +202,13 @@ html {
  
 }
 .goals h1 {
-  font-size: 2vw;
+  font-size: 1.8vw;
   color: #1f2d3c;
   font-family: 'Arial', sans-serif;
   font-weight: bolder;
+ 
+
+    line-height: 1vw;
 
   
 
@@ -204,16 +222,17 @@ html {
   margin: 0;
   
   
+  
 }
 
 /* Style for the .goals element inside .gallery */
 .gallery .goals {
-  margin-top: 1vw;
-  width: 75vw;
+  margin-top: 0.5vw;
+  width: 90vw;
 
   background-color: #88888823; /* Gray background color */
-  padding-right: 2vw;
-  padding-left: 2vw;
+  padding-right: 1vw;
+  padding-left: 1vw;
   padding-top: 1vw;
   padding-bottom: 1vw;
   border-radius: 1.5vw; /* Rounded corners */
