@@ -400,14 +400,14 @@ html {
     }
     
     nav ul li {
-        margin: 1.5vw 0;
+        margin: 2.5vw 0;
     }
     
     nav ul li a {
         text-decoration: none;
         color: #4dff00;
-        margin-left: 7vw;
-        margin-right: 7vw;
+        margin-left: 6vw;
+        margin-right: 6vw;
         transition: color 0.3s ease;
         font-size: 3.5vw;
     }
