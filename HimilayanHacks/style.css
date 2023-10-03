@@ -406,10 +406,10 @@ html {
     nav ul li a {
         text-decoration: none;
         color: #4dff00;
-        margin-left: 7.5vw;
-        margin-right: 7.5vw;
+        margin-left: 7vw;
+        margin-right: 7vw;
         transition: color 0.3s ease;
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
     
     nav ul li a:hover {
